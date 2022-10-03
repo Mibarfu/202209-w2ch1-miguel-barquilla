@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-watch": "sass sass/style.scss public/css/style.css --watch",
-    "sass": "sass sass/style.scss public/css/style.css",
+    "sass-watch": "sass src/sass/style.scss public/css/style.css --watch",
+    "sass": "sass src/sass/style.scss public/css/style.css",
     "prepare": "husky install"
   },
   "keywords": [],
