@@ -1,3 +1,5 @@
+@use "variables";
+
 .cards-container {
   display: flex;
   flex-direction: row;
@@ -5,4 +7,10 @@
 
   width: 65%;
   height: 70%;
+}
+
+@media only screen and (max-width: variables.$change-resolution) {
+  .cards-container {
+    display: block;
+  }
 }

@@ -1,3 +1,5 @@
+@use "variables";
+
 .card-auto-select {
   flex: 1;
 
@@ -12,14 +14,14 @@
 
   &--sedan {
     border-radius: 10px 0 0 10px;
-    background-color: hsl(31, 77%, 52%);
+    background-color: variables.$color-card-sedans;
   }
   &--suvs {
-    background-color: hsl(184, 100%, 22%);
+    background-color: variables.$color-card-suvs;
   }
   &--luxury {
     border-radius: 0 10px 10px 0;
-    background-color: hsl(179, 100%, 13%);
+    background-color: variables.$color-card-luxury;
   }
 }
 
@@ -28,4 +30,17 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+}
+
+@media only screen and (max-width: variables.$change-resolution) {
+  .card-auto-select {
+    height: 425px;
+
+    &--sedan {
+      border-radius: 10px 10px 0 0;
+    }
+    &--luxury {
+      border-radius: 0 0 10px 10px;
+    }
+  }
 }

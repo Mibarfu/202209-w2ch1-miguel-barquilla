@@ -1,3 +1,5 @@
+@use "variables";
+
 .principal-button {
   background-color: white;
   border: 2px solid white;
@@ -13,12 +15,12 @@
   }
 
   &--sedan {
-    color: hsl(31, 77%, 52%);
+    color: variables.$color-card-sedans;
   }
   &--suvs {
-    color: hsl(184, 100%, 22%);
+    color: variables.$color-card-suvs;
   }
   &--luxury {
-    color: hsl(179, 100%, 13%);
+    color: variables.$color-card-luxury;
   }
 }
